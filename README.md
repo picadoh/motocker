@@ -5,7 +5,7 @@ Moto Server is a standalone server mode of the Moto library, that can be used to
 
 ### Stack
 
-* Python 2.7
+* Python 3.7
 * Flask
 
 ### Getting the image

@@ -1,9 +1,8 @@
-FROM python:2.7.14-alpine3.7
+FROM python:2.7-alpine
 
-MAINTAINER Hugo Picado
+MAINTAINER picadoh
 
-RUN apk update && apk upgrade
-RUN apk add --no-cache openssl-dev libffi-dev musl-dev gcc
+RUN apk add --no-cache --update gcc musl-dev libffi-dev openssl-dev
 RUN pip install moto && pip install flask
 
 VOLUME /opt/moto
@@ -14,4 +13,3 @@ RUN chmod +x start.sh
 EXPOSE 5000
 
 ENTRYPOINT ./start.sh
-

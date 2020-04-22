@@ -1,6 +1,6 @@
 ### Summary
 
-Docker container for Moto Server.
+Docker container for [Moto Server](https://github.com/spulec/moto).
 Moto Server is a standalone server mode of the Moto library, that can be used to mock AWS services.
 
 ### Stack
